@@ -1,0 +1,10 @@
+<div ng-controller="homeController as home" ng-hide="token!=undefined" ng-init="redirect()">
+    <h1>Home</h1>
+    <a ng-click="home.logOut()"> Odjavi se</a>
+    <button class="btn btn-success" type="button" ng-click="home.new()">new</button>
+    <br>
+    <span ng-repeat="category in home.category">
+        <span ng-click="home.categoryPick(category.kategorija)">  {{category.kategorija}} </span>
+    </span>
+
+</div>

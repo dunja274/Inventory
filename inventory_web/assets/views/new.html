@@ -1,0 +1,16 @@
+ <div ng-controller = "newController as new" >    
+    <h1>New</h1>
+    <p>Ime: <input type="text" ng-model="ime"></p> 
+    <p>Ucionica: <input type="text" ng-model="ucionica"></p>
+    <p>garancija: <input type="text" ng-model="garancija"></p>
+    <p>datum nabave: <input type="date" ng-model="datum"></p>
+    <div class="dropdown" data-toggle="dropdown">Stanje: <input type="text" ng-model="stanje">
+    <span class="dropdown-menu" type="text" ng-repeat="stanje in new.stanje">
+        <span ng-click="new.stanjePick(stanje.stanje)">  {{stanje.stanje}} </span>
+        </span>
+    </div>
+    
+    <p>kategorija: <input type="text" ng-model="kategorija"></p>
+    <button type="button" ng-click="new.send(ime, ucionica, garancija, datum, stanje, kategorija)">SEND</button> 
+
+</div>

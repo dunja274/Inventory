@@ -1,0 +1,10 @@
+<div class="col" ng-controller = "loginController as login">    
+    <h1>Login</h1>
+    <div ng-hide="login.loginSuccess">
+    <p>Email: <input type="text" ng-model="ime"></p> 
+    <p>Password: <input type="password" ng-model="pass"></p>
+    <button type="button" ng-click="login.send(ime, pass)">SEND</button> 
+
+    <p ng-click="login.redirect()">Registriraj se</p>     
+</div>
+

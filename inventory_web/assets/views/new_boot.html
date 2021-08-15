@@ -1,0 +1,41 @@
+<form ng-controller="newController as new" class="col-sm-5 col-sm-offset-3 col-md-6 col-md-offset-3">
+  <div class="form-group" >
+    <label for="exampleInputEmail1">Naziv</label>
+    <input type="text" class="form-control"  ng-model="ime" placeholder="Naziv predmeta">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1">Ucionica</label>
+    <select class="form-control" id="exampleSelect1" ng-options="ucionica.id as ucionica.ucionica for ucionica in $storage.ucionice" ng-model="ucionica.id">
+      <option selected disabled value="">Izaberi ucionicu</option>
+   
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Garancija</label>
+    <input type="text" class="form-control" placeholder="Garancija u godinama" ng-model="garancija">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Datum nabave</label>
+    <input type="date" class="form-control" placeholder="Datum nabave" ng-model="datum">
+    
+  </div> 
+  
+  <div class="form-group">
+    <label for="exampleSelect1">Example select</label>
+    <select class="form-control" ng-options="stanje.id as stanje.stanje for stanje in $storage.stanje" ng-model="stanje.id">
+      <option selected disabled value="">Izaberi stanje</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleSelect1">Example select</label>
+    <select class="form-control" ng-options="kategorija.id as kategorija.kategorija for kategorija in $storage.category" ng-model="kategorija.id">
+      <option selected disabled value="">Izaberi kategoriju</option>
+    
+    </select>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" ng-click="new.send(ime, ucionica.id, garancija, datum, stanje.id, kategorija.id)">Spremi</button>
+</form>

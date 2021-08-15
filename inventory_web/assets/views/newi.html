@@ -1,0 +1,34 @@
+<div class="logregmiddle">
+    <div class="container" ng-controller = "newController as new">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <form role="form" class="logregcolor">
+                    <fieldset>
+                        <span>
+                            <h1>New</h1>
+                            <br>
+                            <p>Ime: <input type="text" ng-model="ime"></p> 
+                            <p>Ucionica: <input type="text" ng-model="ucionica"></p>
+                            <p>garancija: <input type="text" ng-model="garancija"></p>
+                            <p>slika: <input type="text" ng-model="slika"></p>
+                            <p>datum nabave: <input type="date" ng-model="datum"></p>
+                            <p>Stanje: <input type="text" ng-model="stanje"></p>
+                            <p>kategorija: <input type="text" ng-model="kategorija"></p>
+                            <br>
+                        </span>
+
+                        <span class="editnewimage"></span>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                            <button type="button" ng-click="new.send(email, pass)" class="btn btn-lg btn-success btn-block">CONFIRM</button>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <p ng-click="login.redirect()" class="btn btn-lg btn-default btn-block">Cancel</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

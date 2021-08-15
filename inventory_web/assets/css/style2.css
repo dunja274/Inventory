@@ -1,0 +1,164 @@
+
+
+/* Home start */
+
+
+/* Choose 1 start */
+
+.sidenav1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav1 p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 120%;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav1 p:hover, .offcanvas p:focus{
+    color: #f1f1f1;
+}
+
+.sidenav1 .closebtn1 {
+    position: absolute;
+    font-weight: bold;
+    cursor:pointer;
+    margin-top: 100%;
+}
+
+#main1 {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav1 {padding-top: 15px;}
+  .sidenav1 p {font-size: 18px;}
+}
+
+#kategorije1, #kategorije2, #kategorije3, #kategorije4 {
+    text-decoration: none;
+    cursor:pointer;
+}
+
+#openkategorije{
+    font-size: 20%;
+    cursor:pointer;
+    position: absolute;
+    margin-left: 15%;
+} 
+
+/* Choose 1 end */
+
+
+
+/* Choose 2 start */
+
+#mySidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav2 p {
+    padding-top: 5%;
+    padding-left: 10%;
+    text-decoration: none;
+    font-size: 110%;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.sidenav2 .closebtn2 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main2{
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 p {font-size: 18px;}
+}
+
+
+/* Choose 2 end */
+
+#homeheader{
+padding: 1%;
+padding-bottom: 2%;
+}
+
+#homeproducts1{
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 30%;
+    float: left;
+}
+
+#homeproducts2{
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-left: 30%;
+    height: 100%;
+    width: 100%;
+}
+
+.homeproducts{
+    padding: 2%;
+    padding-left: 10%;
+    border-bottom: solid black 1px;
+    text-decoration: none;
+    font-size: 110%;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+
+#homesearch{
+    width: 75%;
+    position: relative;
+    float: left;
+}
+
+.homewelcome{
+    font-size: 20px;
+    margin-left: 5%;
+    color: lightgreen;
+}
+
+.homelogout{
+    margin-left: 5%;
+    font-size: 35px;
+    float: right;
+}
+
+/* Home end*/
